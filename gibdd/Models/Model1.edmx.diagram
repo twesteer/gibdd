@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50e3a09335ff4424bb34b73dde2e017b" Name="Diagram1">
+        <EntityTypeShape EntityType="GaiModel.Address" Width="1.5" PointX="1.5" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.CarColors" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Cars" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Categories" Width="1.5" PointX="0.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.ChangeHistory" Width="1.5" PointX="5.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Drivers" Width="1.5" PointX="0.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.engine_types" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Fines" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Licences" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Manufacturer" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.RegionCodes" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Status" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.User" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Workplace" Width="1.5" PointX="1.5" PointY="24.5" IsExpanded="true" />
+        <AssociationConnector Association="GaiModel.FK_Drivers_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Cars_CarColors" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Cars_engine_types" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Cars_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Cars_RegionCodes" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Fines_Cars" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_ChangeHistory_Licences" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_ChangeHistory_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Drivers_Workplace" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Licences_Drivers" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Fines_Licences" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.LicencesCategories" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
