@@ -26,68 +26,65 @@
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Margin="0,60,0,0">
                         <StackPanel Margin="10">
                             <TextBlock Text="ID"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversIDTextBox"/>
+                            <TextBox  x:Name="DriversIDTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="Name"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversNameTextBox"/>
+                            <TextBox  x:Name="DriversNameTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="Middlename"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversMiddlenameTextBox"/>
+                            <TextBox  x:Name="DriversMiddlenameTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="PassportSerial"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversPassportSerialTextBox" />
+                            <TextBox  x:Name="DriversPassportSerialTextBox" />
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="PassportNumber"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversPassportNumberTextBox"/>
+                            <TextBox  x:Name="DriversPassportNumberTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="Postcode"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversPostcodeTextBox"/>
+                            <TextBox  x:Name="DriversPostcodeTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="Phone"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversPhoneTextBox"/>
+                            <TextBox  x:Name="DriversPhoneTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="Email"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversEmailTextBox"/>
+                            <TextBox  x:Name="DriversEmailTextBox"/>
                         </StackPanel>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1" Margin="0,10,0,10">
                         <StackPanel Margin="10">
                             <TextBlock Text="Photo"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversPhotoTextBox"/>
+                            <TextBox  x:Name="DriversPhotoTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="Description"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="DriversDescriptionTextBox"/>
+                            <TextBox x:Name="DriversDescriptionTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="ID Workplace"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="IDWorkplaceTextBox"/>
+                            <TextBox  x:Name="IDWorkplaceTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="ID Address"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="IDAddressTextBox"/>
+                            <TextBox  x:Name="IDAddressTextBox"/>
                         </StackPanel>
                         <StackPanel Margin="10">
                             <TextBlock Text="ID Licence"/>
-                            <TextBox Style="{StaticResource CustomTextBoxStyle}" x:Name="IDLicenceTextBox"/>
+                            <TextBox  x:Name="IDLicenceTextBox"/>
                         </StackPanel>
                     </StackPanel>
 
-                    <!-- Кнопки для управления -->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="2" Margin="0,10,0,10">
-                        <Button Content="Добавить" Style="{StaticResource CustomButtonStyle}" Click="AddDriversButton_Click"/>
-                        <Button Content="Изменить" Style="{StaticResource CustomButtonStyle}" Click="UpdateDriversButton_Click"/>
-                        <Button Content="Удалить" Style="{StaticResource CustomButtonStyle}" Click="DeleteDriversButton_Click"/>
+                        <Button Content="Добавить"  Click="AddDriversButton_Click"/>
+                        <Button Content="Изменить"  Click="UpdateDriversButton_Click"/>
                     </StackPanel>
 
-                    <!-- DataGrid для отображения данных -->
                     <DataGrid x:Name="DriversDataGrid" Grid.Row="3" AutoGenerateColumns="False" Margin="0" SelectionMode="Single" IsReadOnly="True"  SelectionChanged="DriversDataGrid_SelectionChanged" >
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding id}" IsReadOnly="True"/>
@@ -139,8 +136,8 @@
                         <Label Content="Job Name" Foreground="White" FontSize="14"/>
                         <TextBox x:Name="WorkplaceJobNameTextBox"/>
                         <StackPanel Orientation="Horizontal">
-                            <Button x:Name="AddWorkplaceButton" Content="Добавить" Style="{StaticResource CustomButtonStyle}" Margin="10" FontSize="14" Click="AddWorkplaceButton_Click"/>
-                            <Button x:Name="UpdateWorkplaceButton" Content="Изменить" Style="{StaticResource CustomButtonStyle}" Margin="10" FontSize="14" Click="UpdateWorkplaceButton_Click"/>
+                            <Button x:Name="AddWorkplaceButton" Content="Добавить"  Margin="10" FontSize="14" Click="AddWorkplaceButton_Click"/>
+                            <Button x:Name="UpdateWorkplaceButton" Content="Изменить" Margin="10" FontSize="14" Click="UpdateWorkplaceButton_Click"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>
@@ -177,8 +174,8 @@
                         <Label Content="AddressLife" Foreground="White" FontSize="14"/>
                         <TextBox x:Name="AddressLifeTextBox"/>
                         <StackPanel Orientation="Horizontal">
-                            <Button x:Name="AddAddressButton" Content="Добавить" Style="{StaticResource CustomButtonStyle}" Margin="10" Click="AddAddressButton_Click" FontSize="14"/>
-                            <Button x:Name="UpdateAddressButton" Content="Изменить" Style="{StaticResource CustomButtonStyle}" Margin="10" Click="UpdateAddressButton_Click" FontSize="14"/>
+                            <Button x:Name="AddAddressButton" Content="Добавить"  Margin="10" Click="AddAddressButton_Click" FontSize="14"/>
+                            <Button x:Name="UpdateAddressButton" Content="Изменить"  Margin="10" Click="UpdateAddressButton_Click" FontSize="14"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>

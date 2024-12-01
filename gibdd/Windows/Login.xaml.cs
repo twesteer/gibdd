@@ -146,5 +146,19 @@ namespace gibdd.Windows
                 MessageBox.Show($"Ошибка загрузки данных блокировки: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        public bool AuthenticateUser(string login, string password, out string role)
+        {
+            role = null;
+
+            var user = gaiEntities.User.FirstOrDefault(u => u.Login == login && u.Password == password);
+            if (user != null)
+            {
+                role = user.Role;
+                return true;
+            }
+
+            return false;
+        }
+
     }
 }

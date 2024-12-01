@@ -261,5 +261,31 @@ namespace gibdd.Windows
         {
 
         }
+        public bool AddDriver(Drivers newDriver)
+        {
+            if (newDriver == null ||
+                string.IsNullOrWhiteSpace(newDriver.Name) ||
+                string.IsNullOrWhiteSpace(newDriver.Middlename) ||
+                newDriver.PassportSerial <= 0 ||
+                newDriver.PassportNumber <= 0 ||
+                newDriver.id_Workplace <= 0 ||
+                newDriver.id_Adress <= 0 ||
+                newDriver.id_Licence <= 0)
+            {
+                return false;
+            }
+
+            try
+            {
+                gaiEntities.Drivers.Add(newDriver);
+                gaiEntities.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
     }
 }
